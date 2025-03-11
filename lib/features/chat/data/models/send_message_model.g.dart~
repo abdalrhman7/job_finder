@@ -1,0 +1,47 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'send_message_model.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+SendMessageModel _$SendMessageModelFromJson(Map<String, dynamic> json) =>
+    SendMessageModel(
+      status: json['status'] as bool?,
+      data: json['data'] == null
+          ? null
+          : MassageDataModel.fromJson(json['data'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$SendMessageModelToJson(SendMessageModel instance) =>
+    <String, dynamic>{
+      'status': instance.status,
+      'data': instance.data,
+    };
+
+MassageDataModel _$MassageDataModelFromJson(Map<String, dynamic> json) =>
+    MassageDataModel(
+      massage: json['massage'] as String?,
+      userId: json['userId'] as String?,
+      compId: json['compId'] as String?,
+      senderUser: json['senderUser'] as String?,
+      updatedAt: json['updatedAt'] == null
+          ? null
+          : DateTime.parse(json['updatedAt'] as String),
+      createdAt: json['createdAt'] == null
+          ? null
+          : DateTime.parse(json['createdAt'] as String),
+      id: (json['id'] as num?)?.toInt(),
+    );
+
+Map<String, dynamic> _$MassageDataModelToJson(MassageDataModel instance) =>
+    <String, dynamic>{
+      'massage': instance.massage,
+      'userId': instance.userId,
+      'compId': instance.compId,
+      'senderUser': instance.senderUser,
+      'updatedAt': instance.updatedAt?.toIso8601String(),
+      'createdAt': instance.createdAt?.toIso8601String(),
+      'id': instance.id,
+    };

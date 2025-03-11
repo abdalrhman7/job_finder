@@ -1,0 +1,48 @@
+import 'package:json_annotation/json_annotation.dart';
+part 'send_message_model.g.dart';
+
+
+@JsonSerializable()
+class SendMessageModel {
+  bool? status;
+  SendMassageDataModel? data;
+
+  SendMessageModel({this.status, this.data});
+
+
+  Map<String, dynamic> toJson() => _$SendMessageModelToJson(this);
+}
+
+@JsonSerializable()
+class SendMassageDataModel {
+  String? massage;
+  @JsonKey(name: 'user_id')
+  String? userId;
+  @JsonKey(name: 'comp_id')
+  String? compId;
+  @JsonKey(name: 'sender_user')
+  String? senderUser;
+  @JsonKey(name: 'updated_at')
+  DateTime? updatedAt;
+  @JsonKey(name: 'created_at')
+  DateTime? createdAt;
+  int? id;
+
+  SendMassageDataModel({
+    this.massage,
+    this.userId,
+    this.compId,
+    this.senderUser,
+    this.updatedAt,
+    this.createdAt,
+    this.id,
+  });
+
+  factory SendMassageDataModel.fromJson(Map<String, dynamic> json) =>
+      _$SendMassageDataModelFromJson(json);
+
+  Map<String, dynamic> toJson() => _$SendMassageDataModelToJson(this);
+
+
+
+}

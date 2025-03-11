@@ -1,0 +1,2 @@
+C:/Users/Noby/StudioProjects/jop_app/android/app/.cxx/Debug/5h4x346y/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/Noby/StudioProjects/jop_app/android/app/.cxx/Debug/5h4x346y/x86_64/CMakeFiles/rebuild_cache.dir
