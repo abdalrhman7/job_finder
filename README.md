@@ -1,16 +1,20 @@
 # JobFinder
 
-A new Flutter project.
+**JobFinder** is a Flutter application that allows users to browse and apply for jobs. Users can save jobs, submit their CVs, search for specific jobs, and communicate via messages when applying.
 
-## Getting Started
+## Features 🎯
 
-This project is a starting point for a Flutter application.
+- **Job Browsing:** View a list of available jobs fetched from an API.
+- **Job Saving & Applying:** Save jobs for later or apply to them by submitting a CV.
+- **Search Functionality:** Search for jobs by keywords or categories.
+- **Messaging System:** Receive messages and communicate when applying for jobs.
+- **Secure Token Storage:** Manages user tokens securely using `flutter_secure_storage`.
 
-A few resources to get you started if this is your first Flutter project:
+## Technologies Used
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Flutter:** Cross-platform development framework.
+- **Cubit (State Management):** Simplifies state management and improves maintainability.
+- **Clean Architecture:** Ensures scalability, testability, and separation of concerns.
+- **GetIt (Dependency Injection):** Provides easy management of dependencies throughout the app.
+- **FlutterSecureStorage:** Ensures secure storage of user tokens.
+- **Dio:** For making HTTP requests to the API.
